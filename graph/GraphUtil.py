@@ -11,6 +11,7 @@ class GraphUtil:
                 raise ValueError()
 
         self.vertices = vertices
+        # TODO: Organize the vertices as a dictionary of vertex key, followed by their neighbour vertices
 
     def find_path(self, *, from_vertex: Vertex, to_vertex: Vertex):
         pass
