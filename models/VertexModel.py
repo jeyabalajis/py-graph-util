@@ -1,5 +1,5 @@
-from core.Node import Node
-from core.Edge import Edge
+from models.NodeModel import Node
+from models.EdgeModel import Edge
 
 
 class Vertex(Node):

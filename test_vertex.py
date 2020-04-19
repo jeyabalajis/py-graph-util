@@ -1,6 +1,6 @@
 import pytest
-from core.Vertex import Vertex
-from core.Edge import Edge
+from models.VertexModel import Vertex
+from models.EdgeModel import Edge
 
 
 class TestVertex:
@@ -10,7 +10,6 @@ class TestVertex:
         assert actor_vertex.data.get("name") == actor_node_data.get("name")
 
         movie_node_data = {"name": "Sleepless in Seattle"}
-
         movie_vertex = Vertex(node_type="Movie", edges=None, **movie_node_data)
 
         edge_data = {"year": 1996}
